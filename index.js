@@ -11,6 +11,33 @@ const tutorials = [
   'what is JSONP?'
 ];
 
-const titleCased = () => {
-  return tutorials
+
+// console.log(tutorials)
+function titleCased() {
+  return tutorials.map(list => list.split(" ").map(word => word.charAt(0).toUpperCase()+ word.slice(1)).join(' ') );
+  
 }
+
+// const firstLetter = tutorials.map(list => {
+//   let words = list.split(" ");
+//   words.forEach((words, index, array) => {
+//     array[index] = words.charAt(0).toUpperCase() + words.slice(1);
+    
+//   });
+//   return words.join(' ');
+   
+// })
+
+
+
+
+// create a function titleCased
+// modify the array:
+// - break each array
+// - access each array and modify each individual word
+// - replace the letter
+// - oin it back together in the array
+
+
+
+
